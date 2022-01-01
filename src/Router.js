@@ -1,8 +1,5 @@
 import React, {lazy} from "react"
-import {Route, BrowserRouter, Router, Switch, Routes} from "react-router-dom"
-import {history} from "./history"
-import {connect} from "react-redux"
-import * as PropTypes from "prop-types";
+import {Route, BrowserRouter, Routes} from "react-router-dom"
 
 // Route-based code splitting
 const MainView = lazy(() => import("./views/main/Main"));
@@ -12,11 +9,6 @@ const UserSearchView = lazy(() => import("./views/user/UserSearch"))
 function Suspense(props) {
     return null;
 }
-
-Suspense.propTypes = {
-    fallback: PropTypes.element,
-    children: PropTypes.node
-};
 
 class AppRouter extends React.Component {
     render() {
