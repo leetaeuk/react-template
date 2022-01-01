@@ -31,7 +31,6 @@ class AppRouter extends React.Component {
                             <NotFoundView />
                         </React.Suspense>
                     }/>
-
                 </Routes>
             </BrowserRouter>
         )

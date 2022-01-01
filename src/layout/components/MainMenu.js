@@ -28,7 +28,7 @@ const MainMenuLayout = () => (
                 <li className="nav-item"><a href="#"><i className="feather icon-shopping-cart"></i><span
                     className="menu-title" data-i18n="Ecommerce">Ecommerce</span></a>
                     <ul className="menu-content">
-                        <li className="active"><a href="app-ecommerce-shop.html"><i className="feather icon-circle"></i><span
+                        <li><a href="app-ecommerce-shop.html"><i className="feather icon-circle"></i><span
                             className="menu-item" data-i18n="Shop">Shop</span></a>
                         </li>
                         <li><a href="app-ecommerce-details.html"><i className="feather icon-circle"></i><span
