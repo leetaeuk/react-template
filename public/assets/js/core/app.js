@@ -6,7 +6,6 @@
   Author: Pixinvent
   Author URL: hhttp://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
-
 (function (window, document, $) {
   "use strict";
   var $html = $("html");
@@ -942,4 +941,35 @@
   // Waves Effect
   Waves.init();
   Waves.attach(".btn", ["waves-light"]);
+
+  $(".nav-link-style").on("click", (function() {
+    var a = "dark-layout"
+    if( $(this).find("i").hasClass("icon-sun") )
+    {
+      a = "light-layout"
+
+      $body.attr("data-layout", a);
+      $body.removeClass("dark-layout")
+      $body.addClass(a)
+      $("nav").removeClass("navbar-dark")
+      $("nav").addClass("navbar-light")
+
+      $(this).find("i").removeClass("icon-sun")
+      $(this).find("i").addClass("icon-moon")
+    }
+    else
+    {
+      a = "dark-layout"
+      $body.attr("data-layout", a);
+      $body.removeClass("light-layout")
+      $body.addClass(a)
+      $("nav").removeClass("navbar-light")
+      $("nav").addClass("navbar-dark")
+
+      $(this).find("i").removeClass("icon-moon")
+      $(this).find("i").addClass("icon-sun")
+    }
+
+
+  }));
 })(window, document, jQuery);

@@ -6,10 +6,6 @@ const MainView = lazy(() => import("./views/main/Main"));
 const NotFoundView = lazy(() => import("./views/error/404"))
 const UserSearchView = lazy(() => import("./views/user/UserSearch"))
 
-function Suspense(props) {
-    return null;
-}
-
 class AppRouter extends React.Component {
     render() {
         return (

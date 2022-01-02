@@ -13,6 +13,12 @@ const HeaderLayout = () => (
                         </ul>
                     </div>
                     <ul className="nav navbar-nav float-right">
+                        <li className="nav-item d-lg-block">
+                            <a className="nav-link nav-link-style"><i className="ficon feather icon-sun"></i></a>
+                        </li>
+                        <li className="nav-item d-lg-block">
+                            <a className="nav-link nav-link-expand"><i className="ficon feather icon-maximize"></i></a>
+                        </li>
                         <li className="dropdown dropdown-user nav-item">
                             <a className="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
                                 <div className="user-nav d-sm-flex d-none">
