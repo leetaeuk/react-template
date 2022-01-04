@@ -22,23 +22,20 @@ const MainMenuLayout = () => (
         <div className="main-menu-content">
             <ul className="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
                 <li className=" navigation-header"><span>Apps</span></li>
+                {
+                /*
                 <li className=" nav-item"><a href="app-calender.html"><i className="feather icon-calendar"></i><span
                     className="menu-title" data-i18n="Calender">Calender</span></a>
                 </li>
-                <li className="nav-item"><a href="#"><i className="feather icon-shopping-cart"></i><span
-                    className="menu-title" data-i18n="Ecommerce">Ecommerce</span></a>
+                */
+                }
+                <li className="nav-item"><a href="#"><i className="feather icon-user"></i><span
+                    className="menu-title" data-i18n="Ecommerce">사용자관리</span></a>
                     <ul className="menu-content">
-                        <li><a href="app-ecommerce-shop.html"><i className="feather icon-circle"></i><span
-                            className="menu-item" data-i18n="Shop">Shop</span></a>
-                        </li>
-                        <li><a href="app-ecommerce-details.html"><i className="feather icon-circle"></i><span
-                            className="menu-item" data-i18n="Details">Details</span></a>
-                        </li>
-                        <li><a href="app-ecommerce-wishlist.html"><i className="feather icon-circle"></i><span
-                            className="menu-item" data-i18n="Wish List">Wish List</span></a>
-                        </li>
-                        <li><a href="app-ecommerce-checkout.html"><i className="feather icon-circle"></i><span
-                            className="menu-item" data-i18n="Checkout">Checkout</span></a>
+                        <li>
+                            <a onClick={()=>{alert(3)}}><i className="feather icon-circle"></i>
+                                <span className="menu-item" data-i18n="Shop">사용자조회</span>
+                            </a>
                         </li>
                     </ul>
                 </li>
